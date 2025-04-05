@@ -1,0 +1,37 @@
+\doxysection{cuenta.\+h}
+\hypertarget{cuenta_8h_source}{}\label{cuenta_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CuentaBancaria\_h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CuentaBancaria\_h}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCuentaBancaria}{CuentaBancaria}}}
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ saldo;}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ retiroBloqueado\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classCuentaBancaria_a4937d2ddc63d281884b227d5d8331e9e}{numeroCuenta}};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{classCuentaBancaria}{CuentaBancaria}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classCuentaBancaria_a4937d2ddc63d281884b227d5d8331e9e}{numeroCuenta}},\ \textcolor{keywordtype}{float}\ saldo);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCuentaBancaria_ab2cf6c9522127e2aa1ac87f7449c5bf9}{depositar}}(\textcolor{keywordtype}{float}\ cantidad);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCuentaBancaria_a23959e508380516eebcc734d605617ad}{retirar}}(\textcolor{keywordtype}{float}\ cantidad);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCuentaBancaria_a1f226cbfeacfe7b9cfccc170aa5891e4}{retiroValido}}(\textcolor{keywordtype}{float}\ cantidad);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCuentaBancaria_ad111036be596ffdc19c89d89f58631be}{bloquearRetiro}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCuentaBancaria_a43dc103a1f7ae82bba3d42105f0e4eca}{obtenerSaldo}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00081\ \};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

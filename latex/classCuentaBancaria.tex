@@ -1,0 +1,193 @@
+\doxysection{Cuenta\+Bancaria Class Reference}
+\hypertarget{classCuentaBancaria}{}\label{classCuentaBancaria}\index{CuentaBancaria@{CuentaBancaria}}
+
+
+Representa una cuenta bancaria con saldo y funcionalidad para depósitos, retiros y bloqueo de retiros.  
+
+
+
+
+{\ttfamily \#include $<$cuenta.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCuentaBancaria_a5e6e84d9fe3c04d36ad876f7a8ae8c4a}{Cuenta\+Bancaria}} (string \mbox{\hyperlink{classCuentaBancaria_a4937d2ddc63d281884b227d5d8331e9e}{numero\+Cuenta}}, float saldo)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classCuentaBancaria}{Cuenta\+Bancaria}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCuentaBancaria_ab2cf6c9522127e2aa1ac87f7449c5bf9}{depositar}} (float cantidad)
+\begin{DoxyCompactList}\small\item\em Realiza un depósito en la cuenta bancaria. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCuentaBancaria_a23959e508380516eebcc734d605617ad}{retirar}} (float cantidad)
+\begin{DoxyCompactList}\small\item\em Realiza un retiro de la cuenta bancaria si es válido. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCuentaBancaria_a1f226cbfeacfe7b9cfccc170aa5891e4}{retiro\+Valido}} (float cantidad)
+\begin{DoxyCompactList}\small\item\em Verifica si un retiro es válido. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCuentaBancaria_ad111036be596ffdc19c89d89f58631be}{bloquear\+Retiro}} ()
+\begin{DoxyCompactList}\small\item\em Bloquea los retiros de la cuenta bancaria. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCuentaBancaria_a43dc103a1f7ae82bba3d42105f0e4eca}{obtener\+Saldo}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el saldo actual de la cuenta bancaria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCuentaBancaria_a4937d2ddc63d281884b227d5d8331e9e}\label{classCuentaBancaria_a4937d2ddc63d281884b227d5d8331e9e} 
+string {\bfseries numero\+Cuenta}
+\begin{DoxyCompactList}\small\item\em Número de cuenta bancaria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una cuenta bancaria con saldo y funcionalidad para depósitos, retiros y bloqueo de retiros. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCuentaBancaria_a5e6e84d9fe3c04d36ad876f7a8ae8c4a}\label{classCuentaBancaria_a5e6e84d9fe3c04d36ad876f7a8ae8c4a} 
+\index{CuentaBancaria@{CuentaBancaria}!CuentaBancaria@{CuentaBancaria}}
+\index{CuentaBancaria@{CuentaBancaria}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{CuentaBancaria()}{CuentaBancaria()}}
+{\footnotesize\ttfamily Cuenta\+Bancaria\+::\+Cuenta\+Bancaria (\begin{DoxyParamCaption}\item[{string}]{numero\+Cuenta,  }\item[{float}]{saldo }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classCuentaBancaria}{Cuenta\+Bancaria}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero\+Cuenta} & Número de la cuenta bancaria. \\
+\hline
+{\em saldo} & Saldo inicial de la cuenta.\\
+\hline
+\end{DoxyParams}
+Inicializa una cuenta bancaria con un número de cuenta, un saldo inicial y establece que los retiros no están bloqueados.
+
+
+\begin{DoxyParams}{Parameters}
+{\em numero\+Cuenta} & Número de la cuenta bancaria. \\
+\hline
+{\em saldo} & Saldo inicial de la cuenta. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCuentaBancaria_ad111036be596ffdc19c89d89f58631be}\label{classCuentaBancaria_ad111036be596ffdc19c89d89f58631be} 
+\index{CuentaBancaria@{CuentaBancaria}!bloquearRetiro@{bloquearRetiro}}
+\index{bloquearRetiro@{bloquearRetiro}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{bloquearRetiro()}{bloquearRetiro()}}
+{\footnotesize\ttfamily void Cuenta\+Bancaria\+::bloquear\+Retiro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bloquea los retiros de la cuenta bancaria. 
+
+Establece el estado de {\ttfamily retiro\+Bloqueado} en verdadero, impidiendo que se realicen retiros de la cuenta. \Hypertarget{classCuentaBancaria_ab2cf6c9522127e2aa1ac87f7449c5bf9}\label{classCuentaBancaria_ab2cf6c9522127e2aa1ac87f7449c5bf9} 
+\index{CuentaBancaria@{CuentaBancaria}!depositar@{depositar}}
+\index{depositar@{depositar}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{depositar()}{depositar()}}
+{\footnotesize\ttfamily float Cuenta\+Bancaria\+::depositar (\begin{DoxyParamCaption}\item[{float}]{cantidad }\end{DoxyParamCaption})}
+
+
+
+Realiza un depósito en la cuenta bancaria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Monto a depositar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Saldo actualizado después del depósito.
+\end{DoxyReturn}
+Si el monto a depositar es mayor que cero, se suma al saldo actual.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Monto a depositar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Saldo actualizado después del depósito. 
+\end{DoxyReturn}
+\Hypertarget{classCuentaBancaria_a43dc103a1f7ae82bba3d42105f0e4eca}\label{classCuentaBancaria_a43dc103a1f7ae82bba3d42105f0e4eca} 
+\index{CuentaBancaria@{CuentaBancaria}!obtenerSaldo@{obtenerSaldo}}
+\index{obtenerSaldo@{obtenerSaldo}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{obtenerSaldo()}{obtenerSaldo()}}
+{\footnotesize\ttfamily float Cuenta\+Bancaria\+::obtener\+Saldo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el saldo actual de la cuenta bancaria. 
+
+\begin{DoxyReturn}{Returns}
+float Saldo actual.
+
+float Saldo actual de la cuenta. 
+\end{DoxyReturn}
+\Hypertarget{classCuentaBancaria_a23959e508380516eebcc734d605617ad}\label{classCuentaBancaria_a23959e508380516eebcc734d605617ad} 
+\index{CuentaBancaria@{CuentaBancaria}!retirar@{retirar}}
+\index{retirar@{retirar}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{retirar()}{retirar()}}
+{\footnotesize\ttfamily float Cuenta\+Bancaria\+::retirar (\begin{DoxyParamCaption}\item[{float}]{cantidad }\end{DoxyParamCaption})}
+
+
+
+Realiza un retiro de la cuenta bancaria si es válido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Monto a retirar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Saldo actualizado después del retiro.
+\end{DoxyReturn}
+Si el retiro es válido (verificado por el método {\ttfamily retiro\+Valido}), se resta el monto del saldo actual. De lo contrario, se muestra un mensaje de error.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Monto a retirar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Saldo actualizado después del retiro. 
+\end{DoxyReturn}
+\Hypertarget{classCuentaBancaria_a1f226cbfeacfe7b9cfccc170aa5891e4}\label{classCuentaBancaria_a1f226cbfeacfe7b9cfccc170aa5891e4} 
+\index{CuentaBancaria@{CuentaBancaria}!retiroValido@{retiroValido}}
+\index{retiroValido@{retiroValido}!CuentaBancaria@{CuentaBancaria}}
+\doxysubsubsection{\texorpdfstring{retiroValido()}{retiroValido()}}
+{\footnotesize\ttfamily bool Cuenta\+Bancaria\+::retiro\+Valido (\begin{DoxyParamCaption}\item[{float}]{cantidad }\end{DoxyParamCaption})}
+
+
+
+Verifica si un retiro es válido. 
+
+Un retiro es válido si no está bloqueado, el monto es positivo y no excede el saldo disponible.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Monto a verificar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Si el retiro es válido. 
+
+false Si el retiro no es válido.
+\end{DoxyReturn}
+Un retiro es válido si\+:
+\begin{DoxyItemize}
+\item Los retiros no están bloqueados.
+\item El monto es mayor que cero.
+\item El monto no excede el saldo disponible.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Monto a verificar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Si el retiro es válido. 
+
+false Si el retiro no es válido. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cuenta.\+h\item 
+cuenta.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\doxysection{contador\+\_\+energia Class Reference}
+\hypertarget{classcontador__energia}{}\label{classcontador__energia}\index{contador\_energia@{contador\_energia}}
+
+
+Representa un contador de energía asociado a una cuenta bancaria.  
+
+
+
+
+{\ttfamily \#include $<$contador\+\_\+energia.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcontador__energia_a295e2475474fab0eb75824d76bed3fa2}{contador\+\_\+energia}} (int id, \mbox{\hyperlink{classCuentaBancaria}{Cuenta\+Bancaria}} \texorpdfstring{$\ast$}{*}cuenta)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classcontador__energia}{contador\+\_\+energia}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcontador__energia_a24463b695662ae062804667c6af254b3}{registrar\+Consumo}} (float consumo, float costo\+Por\+Unidad)
+\begin{DoxyCompactList}\small\item\em Registra el consumo de energía y realiza el cargo correspondiente en la cuenta bancaria. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classcontador__energia_a08ffa1678f8463d25e7ed9271fb54dab}{obtener\+Consumo}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el consumo total registrado por el contador. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcontador__energia_a65884a28a74bbb8db07a724fa3d6f531}{obtener\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el identificador único del contador. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCuentaBancaria}{Cuenta\+Bancaria}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classcontador__energia_a102bfbb576970e33afa008007f08e585}{obtener\+Cuenta}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la cuenta bancaria asociada al contador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un contador de energía asociado a una cuenta bancaria. 
+
+Esta clase permite registrar el consumo de energía, calcular el costo asociado y mantener una relación con una cuenta bancaria para realizar cargos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcontador__energia_a295e2475474fab0eb75824d76bed3fa2}\label{classcontador__energia_a295e2475474fab0eb75824d76bed3fa2} 
+\index{contador\_energia@{contador\_energia}!contador\_energia@{contador\_energia}}
+\index{contador\_energia@{contador\_energia}!contador\_energia@{contador\_energia}}
+\doxysubsubsection{\texorpdfstring{contador\_energia()}{contador\_energia()}}
+{\footnotesize\ttfamily contador\+\_\+energia\+::contador\+\_\+energia (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classCuentaBancaria}{Cuenta\+Bancaria}} \texorpdfstring{$\ast$}{*}}]{cuenta }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{classcontador__energia}{contador\+\_\+energia}. 
+
+Inicializa un contador de energía con un ID único y una cuenta bancaria asociada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Identificador único del contador. \\
+\hline
+{\em cuenta} & Puntero a la cuenta bancaria asociada. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcontador__energia_a08ffa1678f8463d25e7ed9271fb54dab}\label{classcontador__energia_a08ffa1678f8463d25e7ed9271fb54dab} 
+\index{contador\_energia@{contador\_energia}!obtenerConsumo@{obtenerConsumo}}
+\index{obtenerConsumo@{obtenerConsumo}!contador\_energia@{contador\_energia}}
+\doxysubsubsection{\texorpdfstring{obtenerConsumo()}{obtenerConsumo()}}
+{\footnotesize\ttfamily float contador\+\_\+energia\+::obtener\+Consumo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el consumo total registrado por el contador. 
+
+\begin{DoxyReturn}{Returns}
+float Consumo total de energía. 
+\end{DoxyReturn}
+\Hypertarget{classcontador__energia_a102bfbb576970e33afa008007f08e585}\label{classcontador__energia_a102bfbb576970e33afa008007f08e585} 
+\index{contador\_energia@{contador\_energia}!obtenerCuenta@{obtenerCuenta}}
+\index{obtenerCuenta@{obtenerCuenta}!contador\_energia@{contador\_energia}}
+\doxysubsubsection{\texorpdfstring{obtenerCuenta()}{obtenerCuenta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCuentaBancaria}{Cuenta\+Bancaria}} \texorpdfstring{$\ast$}{*} contador\+\_\+energia\+::obtener\+Cuenta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la cuenta bancaria asociada al contador. 
+
+\begin{DoxyReturn}{Returns}
+Cuenta\+Bancaria\texorpdfstring{$\ast$}{*} Puntero a la cuenta bancaria asociada. 
+\end{DoxyReturn}
+\Hypertarget{classcontador__energia_a65884a28a74bbb8db07a724fa3d6f531}\label{classcontador__energia_a65884a28a74bbb8db07a724fa3d6f531} 
+\index{contador\_energia@{contador\_energia}!obtenerID@{obtenerID}}
+\index{obtenerID@{obtenerID}!contador\_energia@{contador\_energia}}
+\doxysubsubsection{\texorpdfstring{obtenerID()}{obtenerID()}}
+{\footnotesize\ttfamily int contador\+\_\+energia\+::obtener\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el identificador único del contador. 
+
+\begin{DoxyReturn}{Returns}
+int ID del contador. 
+\end{DoxyReturn}
+\Hypertarget{classcontador__energia_a24463b695662ae062804667c6af254b3}\label{classcontador__energia_a24463b695662ae062804667c6af254b3} 
+\index{contador\_energia@{contador\_energia}!registrarConsumo@{registrarConsumo}}
+\index{registrarConsumo@{registrarConsumo}!contador\_energia@{contador\_energia}}
+\doxysubsubsection{\texorpdfstring{registrarConsumo()}{registrarConsumo()}}
+{\footnotesize\ttfamily void contador\+\_\+energia\+::registrar\+Consumo (\begin{DoxyParamCaption}\item[{float}]{consumo,  }\item[{float}]{costo\+Por\+Unidad }\end{DoxyParamCaption})}
+
+
+
+Registra el consumo de energía y realiza el cargo correspondiente en la cuenta bancaria. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em consumo} & Cantidad de energía consumida. \\
+\hline
+{\em costo\+Por\+Unidad} & Costo por unidad de energía consumida.\\
+\hline
+\end{DoxyParams}
+Si no hay suficiente saldo en la cuenta bancaria asociada, el consumo registrado se revierte.
+
+
+\begin{DoxyParams}{Parameters}
+{\em consumo} & Cantidad de energía consumida. \\
+\hline
+{\em costo\+Por\+Unidad} & Costo por unidad de energía consumida. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+contador\+\_\+energia.\+h\item 
+contador\+\_\+energia.\+cpp\end{DoxyCompactItemize}

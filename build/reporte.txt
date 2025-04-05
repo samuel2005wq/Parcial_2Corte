@@ -1,0 +1,4 @@
+ID        Consumo Total  Número de cuenta   Saldo Restante 
+101       50.5           12345678            373.75         
+102       30.2           93230182            224.5          
+103       75.8           94400248            510.5          
